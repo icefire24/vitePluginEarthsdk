@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": false,
   "main": "index.js",
-  "description":"快速引入earthsdk", 
+  "type": "module",
+  "description": "快速引入earthsdk",
   "types": "./index.d.ts",
   "devDependencies": {
     "typescript": "^4.8.3"
@@ -14,6 +15,10 @@
     "vite"
   ],
   "author": "icefilesong24",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:icefiresong24/vitePluginEarthsdk.git"
+  },
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^10.1.0",

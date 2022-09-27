@@ -1,13 +1,13 @@
 import fs from "fs-extra";
+console.log(fs);
 export default function vitePluginEarthsdk(){
   let outDir = "dist";
-  let base = "/";
+  let base = "./";
   return {
     name: "vitePluginEarthsdk",
     async config(config, { command }) {
-      if (config.base) {
-        base = config.base;
-        if (base === "") base = "./";
+      if (!config.base) {
+        config.base=base
       }
       if (command == "serve") {
         //develop引入earth包
